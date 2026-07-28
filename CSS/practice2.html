@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Freeha Gupta">
+    <title>Grid Layout</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            min-height:100vh;
+            font-family:Arial, sans-serif;
+        }
+
+        header{
+            height:10vh;
+            background:darkred;
+            color:white;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            font-size:22px;
+        }
+
+        main{
+            height:80vh;
+            display:grid;
+            place-items:center;
+            background:white;
+        }
+
+        .grid-container{
+            width:40%;
+            height:70%;
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            grid-template-rows:1fr 1fr;
+            gap:20px;
+        }
+
+        .box{
+            background:darkred;
+            color:white;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            font-size:20px;
+        }
+
+        footer{
+            height:10vh;
+            background:darkred;
+            color:white;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            font-size:22px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        Header / NavBar
+    </header>
+
+    <main>
+        <section class="grid-container">
+            <article class="box">Box 1</article>
+            <article class="box">Box 2</article>
+            <article class="box">Box 3</article>
+            <article class="box">Box 4</article>
+        </section>
+    </main>
+
+    <footer>
+        Footer
+    </footer>
+
+</body>
+</html>

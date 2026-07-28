@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Freeha Gupta">
+    <title>Flex Box</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        body{
+            min-height:100dvh;
+            font-family:"Courgette", sans-serif;
+            font-size:16px;
+            background-color:white;
+            color:white;
+        }
+        .box{
+            background-color:darkred;
+            color:white;
+            padding:1rem;
+        }
+        .gc{
+            display:grid;
+            gap:0.5rem;
+            grid-template-columns:150px 150px 150px;
+            grid-template-rows:150px 150px 150px;
+            place-content:center;
+        }
+        #m1{
+            grid-column-start:1;
+            grid-row-end:3;
+            grid-row-start:1;
+            grid-row-end:2;
+        }
+        #m2{
+            grid-column-start:3;
+            grid-column-end:4;
+            grid-row-start:1;
+            grid-row-end:3;
+        }
+        #m3{
+            grid-column-start:1;
+            grid-column-end:2;
+            grid-row-start:2;
+            grid-row-end:4;
+
+        }
+        #m5{
+            grid-column-start:2;
+            grid-column-end:4;
+            grid-row-start:3;
+            grid-row-end:4;
+        }
+        @media(min-width:767px){
+            .gc{
+            grid-template-columns:minmax(175px,225px) minmax(225px,275px) minmax(175px,225px);
+            grid-template-rows:175px 175px 175px;
+        }
+        }
+        @media(min-width:1024px){
+            .gc{
+                grid-template-columns:minmax(250px,350px) minmax(300px,400px) minmax(250px,350px);
+                grid-template-rows:175px 175px 175px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <section class="box" style="height: 10vh">Header/NavBar
+    <span style="font-size:2.5rem;margin-right:1rem;"></span></section>
+    <section
+      class="box gc"
+      style="height:80vh; background-color:white"
+    >
+    <main class="box" id="m1">Content-1</main>
+    <main class="box" id="m2">Content-2</main>
+    <main class="box" id="m3">Content-3</main>
+    <main class="box" id="m4">Content-4</main>
+    <main class="box" id="m5">Content-5</main>
+    <main class="box" id="m6">Content-6</main>
+    </section>
+    <section
+      class="box"
+      style="position:absolute; bottom:0; left:0; height:10vh; width:100%;"
+    >
+      Footer
+</section>
+    
+</body>
+</html>

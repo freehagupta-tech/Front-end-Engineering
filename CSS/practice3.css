@@ -1,0 +1,37 @@
+body{
+    background:#222;
+    font-family:Arial, sans-serif;
+    color:white;
+    display:flex;
+    justify-content:center;
+    margin-top:40px;
+}
+
+.layout{
+    width:700px;
+    border-collapse:collapse;
+}
+
+.layout td{
+    border:1px solid white;
+    padding:15px;
+    height:60px;
+}
+
+.center{
+    text-align:center;
+    height:120px;
+}
+
+.box{
+    width:100px;
+    height:70px;
+    background:#6aa8ff;
+    color:white;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    margin:0 15px;
+    font-weight:bold;
+}
