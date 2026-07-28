@@ -12,5 +12,3 @@ let cost=quantity*prices[srno-1];
 console.log("Total cost is: ",cost);
 console.log();
 */
-
-background blue and make a white box on half upward and then in that box there should be one circle and from between that cirlce two circles are forming and centre are same for them
