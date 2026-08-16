@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content=""width=device-width, intial-scale="1.0"/>
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        body{
+            background-color:hsl(215 100% 7%);
+            color:darkgrey;
+            font-family:"Courgette", sans-serif;
+        }
+        section{
+            width:100%;
+        }
+        .b{
+            border:1px solid skyblue;
+        }
+        header,
+        footer{
+            height:10vh;
+            background-color:hsl(215, 100%, 0%);
+        }
+        #hero{
+            height:80vh;
+        }
+        .fcx{
+            display:flex;
+            flex-direction:row;
+            align-items:center;
+            gap:0.5rem;
+        }
+        .fcy{
+            gap:0.5rem;
+        }
+        main{
+            width:100%;
+            background-color:hsl(215,100%,12%);
+            color:darkgrey;
+        }
+        aside{
+            width:15%;
+            display:none;
+        }
+        @media screen and(min-width:767px){
+            aside{
+                display:block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="p">Header</header>
+    <section class="fcx" id="hero">
+        <aside class="p">Sidebar</aside>
+        <main class="p">Main</main>
+    </section>
+    <footer class="p">Footer</footer>
+    
+</body>
+</html>
